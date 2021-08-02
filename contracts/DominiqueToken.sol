@@ -713,10 +713,10 @@ contract DominiqueToken is Context, IERC20, Ownable {
     string private _symbol = "DToken";    //CHANGE_REQUIRED: ticker of token, usually 3 letter
     uint8 private _decimals = 9;                //CHANGE_OPTIONAL: number of decimals of your token. Recommended to keep unchanged 
     
-    uint256 public _taxFee = 5;                 //CHANGE_OPTIONAL: transaction fee redistributed to all holders
+    uint256 public _taxFee = 3;                 //CHANGE_OPTIONAL: transaction fee redistributed to all holders
     uint256 private _previousTaxFee = _taxFee;
     
-    uint256 public _liquidityFee = 5;           //CHANGE_OPTIONAL: transaction fee sent to Pancakeswap pool
+    uint256 public _liquidityFee = 3;           //CHANGE_OPTIONAL: transaction fee sent to Pancakeswap pool
     uint256 private _previousLiquidityFee = _liquidityFee;
 
     IUniswapV2Router02 public uniswapV2Router;
